@@ -31,10 +31,10 @@
 <main>
 
 <nav class="sidenav">
-	<a href="index.html">Home</a>
-	<a href="reviews.html">Reviews</a>
-	<a href="demos.html">Demos</a>
-	<a href="albums.html">Albums</a>
+	<a href="home.md">Home</a>
+	<a href="reviews.md">Reviews</a>
+	<a href="demos.md">Demos</a>
+	<a href="albums.md">Albums</a>
 </nav>
 
 	<h2 style="font-size:5vw;">Irish Band</h2>
