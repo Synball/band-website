@@ -2,21 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>The Family Knife</title>
 	<link rel="Stylesheet" href="tfk.css">
-	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script>
-    $(function(){
-        $('a').each(function(){
-            if ($(this).prop('href') == window.location.href) {
-                $(this).addClass('active'); $(this).parents('li').addClass('active');
-            }
-        });
-    });
-</script>
+	<title></title>
 </head>
+<script>
 
-<body>
+function Login(form) { username = new Array("Synball","Bren","Mono","Kenny")
+password = new Array("Synball","Bren","Mono","Kenny"); page="index.html"; 
+
+if (form.username.value == username[0] && form.password.value == password[0] || form.username.value == username[1] && form.password.value == password[1] ||
+form.username.value == username[2] && form.password.value == password[2] || form.username.value == username[3] && form.password.value == password[3] ||
+form.username.value == username[4] && form.password.value == password[4] || form.username.value == username[5] && form.password.value == password[5] ||
+
+form.username.value == username[6] && form.password.value == password[6] || form.username.value == username[7] && form.password.value == password[7] ||
+
+form.username.value == username[8] && form.password.value == password[8] || form.username.value == username[9] && form.password.value == password[9]) 
+{ self.location.href = page; } 
+else { alert("You got the password wrong you muppet.\nGive it another go there."); form.username.focus(); } return true; }
+
+</script> 
+
+</head> 
+
+<body bgcolor="#eeeeee"> 
 
 <header id="header-background"> 
 	<h1 style="font-size:8vw;">The Family Knife</h1>
@@ -28,22 +36,21 @@
 	</nav>
 </header>
 
+<form> 
+<br> 
 <main>
+	<h5>Username: 
+	<input type="text" name="username" 
+	style="background:#bfbfbf;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';"
 
-<nav class="sidenav">
-	<a href="index.html">Home</a>
-	<a href="reviews.html">Reviews</a>
-	<a href="demos.html">Demos</a>
-	<a href="albums.html">Albums</a>
-</nav>
+	onBlur="this.style.background = '#bfbfbf';"> 
+	<br> Password: 
+	<input type="password" name="password" style="background:#bfbfbf;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';"	onBlur="this.style.background = '#bfbfbf';"> 
+	<br> 
+	<input type="button" value="Login" onClick="Login(this.form);" style="background:#bfbfbf;color:#000000;border-color:#212121;" onMouseOver="this.style.color =	'#404040';" onMouseOut="this.style.color = '#000000';" onFocusr="this.style.color = '#404040';" onBlur="this.style.color = '#000000';">
+	</h5> 
+</main> 
+</form> 
 
-	<h2 style="font-size:5vw;">Irish Band</h2>
-	<p style="font-size:2vw;">The Family Knife are an Irish band formed in 2016 in Dublin.
-	<br>
-	Every couple of weeks we go to Steve's garage and rock out, 90's style.	
-	</p>
-	
-</main>
-
-</body>
+</body> 
 </html>
