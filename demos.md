@@ -30,7 +30,7 @@
 <main>
 
 <nav class="sidenav">
-	<a href="index.md">Home</a>
+	<a href="home.md">Home</a>
 	<a href="reviews.md">Reviews</a>
 	<a href="demos.md">Demos</a>
 	<a href="albums.md">Albums</a>
